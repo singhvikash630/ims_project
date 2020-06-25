@@ -1,0 +1,14 @@
+package com.adept.ims.authorization.database.dao.impl;
+
+
+import com.adept.ims.database.dao.impl.CommonDAOImpl;
+import com.adept.ims.authorization.database.dao.AuthorizationDAO;
+
+
+/**
+ * This class interacts with Spring and Hibernate to save and
+ * retrieve Trust objects.
+ */
+public class AuthorizationDAOImpl extends CommonDAOImpl implements AuthorizationDAO {
+    
+}

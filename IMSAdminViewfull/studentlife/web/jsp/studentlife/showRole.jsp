@@ -1,0 +1,41 @@
+<%-- 
+    Document   : showRole
+    Created on : Jan 20, 2009, 5:26:25 AM
+    Author     : Vikas
+--%>
+
+<%@ include file="/WEB-INF/jsp/authorization/header.jsp" %>
+
+<h2 align="center"><fmt:message key="role.role-management"/></h2>
+<br/>
+<h3>
+    <c:choose>
+        <c:when test="${role.new}"><fmt:message key="common.record-added-successfully"/></c:when>
+        <c:otherwise><fmt:message key="common.record-updated-successfully"/></c:otherwise>
+    </c:choose>
+</h3>
+<h3><fmt:message key="role.role-information"/></h3>
+
+<table>
+    <tr>
+        <th align="left"><fmt:message key="role.role-name"/>:</th>
+        <td>${role.roleName}</td>
+    </tr>
+    <tr>
+        <th align="left"><fmt:message key="role.description"/>:</th>
+        <td>${role.description}</td>
+        </tr>
+
+
+
+</table>
+
+<table>
+    <tr>
+        <td>
+            <br>
+            <a href="<c:url value="/authorization/findRole.do"/>"><fmt:message key="role.go-to-role-management"/></a>
+        </td>
+    </tr>
+</table>
+<%@ include file="/WEB-INF/jsp/common/footer.jsp" %>

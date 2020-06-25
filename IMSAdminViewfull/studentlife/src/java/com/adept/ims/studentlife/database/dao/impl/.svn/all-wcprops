@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl
+END
+GroupServiceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java
+END
+AuthorizationDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl/AuthorizationDAOImpl.java
+END
+ServiceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl/ServiceDAOImpl.java
+END
+RoleDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl/RoleDAOImpl.java
+END
+RoleServiceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl/RoleServiceDAOImpl.java
+END
+GroupMasterDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java
+END
+PersonRoleDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/dao/impl/PersonRoleDAOImpl.java
+END

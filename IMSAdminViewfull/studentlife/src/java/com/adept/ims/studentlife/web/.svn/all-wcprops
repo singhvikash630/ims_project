@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web
+END
+UpdateGroupMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/UpdateGroupMasterForm.java
+END
+DeleteConfirmGroupServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmGroupServiceForm.java
+END
+ShowGroupServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/ShowGroupServiceForm.java
+END
+AuthorizationController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/AuthorizationController.java
+END
+AddGroupMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/AddGroupMasterForm.java
+END
+DeleteConfirmRoleServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmRoleServiceForm.java
+END
+ShowRoleServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/ShowRoleServiceForm.java
+END
+FindPersonRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/FindPersonRoleForm.java
+END
+UpdatePersonRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/UpdatePersonRoleForm.java
+END
+FindServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/FindServiceForm.java
+END
+AddPersonRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/AddPersonRoleForm.java
+END
+FindRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/FindRoleForm.java
+END
+UpdateServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/UpdateServiceForm.java
+END
+UpdateRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/UpdateRoleForm.java
+END
+ShowGroupMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/ShowGroupMasterForm.java
+END
+AddServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/AddServiceForm.java
+END
+DeleteConfirmGroupMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmGroupMasterForm.java
+END
+AddRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/AddRoleForm.java
+END
+FindGroupServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/FindGroupServiceForm.java
+END
+UpdateGroupServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/UpdateGroupServiceForm.java
+END
+FindRoleServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/FindRoleServiceForm.java
+END
+UpdateRoleServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/UpdateRoleServiceForm.java
+END
+AddGroupServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/AddGroupServiceForm.java
+END
+DeleteConfirmPersonRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmPersonRoleForm.java
+END
+ShowPersonRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/ShowPersonRoleForm.java
+END
+AddRoleServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/AddRoleServiceForm.java
+END
+ShowServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/ShowServiceForm.java
+END
+DeleteConfirmServiceForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmServiceForm.java
+END
+ShowRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/ShowRoleForm.java
+END
+DeleteConfirmRoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmRoleForm.java
+END
+FindGroupMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/web/FindGroupMasterForm.java
+END

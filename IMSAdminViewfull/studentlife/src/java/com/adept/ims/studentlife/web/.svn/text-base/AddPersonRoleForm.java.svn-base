@@ -1,0 +1,65 @@
+package com.adept.ims.authorization.web;
+
+import com.adept.ims.authorization.database.pojo.PersonRole;
+import com.adept.ims.authorization.service.PersonRoleService;
+import com.adept.ims.authorization.validator.PersonRoleValidator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.RequestParam;
+
+/**
+ * JavaBean form controller that is used to add a new <code>Trust</code> to
+ * the system.
+ *
+ */
+@Controller
+@RequestMapping("/authorization/addPersonRole.do")
+@SessionAttributes(types = PersonRole.class)
+public class AddPersonRoleForm {
+
+    private final PersonRoleService personRoleService;
+
+    @Autowired
+    public AddPersonRoleForm(PersonRoleService personRoleService) {
+        this.personRoleService = personRoleService;
+    }
+
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields(new String[]{"id"});
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public String setupForm(Model model) {
+        PersonRole personRole = new PersonRole();
+        model.addAttribute(personRole);
+        return "authorization/addPersonRole";
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public String processSubmit(@RequestParam("addMode") String addMode,
+            @ModelAttribute PersonRole personRole, BindingResult result, Model model, SessionStatus status) {
+        if (addMode.trim().equals("cancel")) {
+            return "redirect:findPersonRole.do";
+        }
+        new PersonRoleValidator().validate(personRole, result);
+        if (result.hasErrors()) {
+            return "authorization/addPersonRole";
+        } else {
+            this.personRoleService.save(personRole);
+            personRole.setNew(true);
+            model.addAttribute("personRole", personRole);
+            return "authorization/showPersonRole";
+        }
+    }
+}

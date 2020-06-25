@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.adept.ims.authorization.database.pojo.GroupMaster" table="GROUPMASTER">
+    <id column="GROUP_ID" name="id">
+      <generator class="increment"/>
+    </id>
+    <property column="GROUP_NAME" name="groupName" not-null="true"/>
+    <property column="DESCRIPTION" name="description" not-null="true"/>
+    <!-- This needs to be ID in actual implementation -->
+  </class>
+</hibernate-mapping>

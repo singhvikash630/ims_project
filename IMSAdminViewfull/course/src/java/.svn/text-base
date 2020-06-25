@@ -1,0 +1,339 @@
+
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[IEAccess.Install.WinXP]
+AddReg=IEAccess.InstallXP.AddReg
+
+[IEAccess.Uninstall.WinXP]
+ProfileItems=BrowserDelXP,BrowserDelXP64
+AddReg=IEAccess.UninstallXP.AddReg
+
+[IEAccess.InstallXP.AddReg]
+HKCU,"Software\Microsoft\Internet Explorer\Main","Check_Associations",,"yes"
+
+[IEAccess.UninstallXP.AddReg]
+HKCU,"Software\Microsoft\Internet Explorer\Main","Check_Associations",,"No"
+
+[DefaultInstall.WinXP]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+ProfileItems=BrowserDelXP,BrowserDelXP64
+RegisterOCXs=MSIE4RegisterOCX
+AddReg=AddReg.IEMain, AddReg.IEOther, AddReg.InetSettings, AddReg.Misc, AddReg.International.XP, AddReg.XPandW2K3
+DelReg=Remove.Reg,!MUICache.DelReg, DelReg.XPandW2K3
+BackupReg=UserRegBackup
+PreRollBack=UserDataUninstall.NT
+RunPostSetupCommands=SetReg:1
+NoBackupPlatform="NT5.1"
+
+[DefaultInstall.Vista]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+ProfileItems=BrowserDelXP,BrowserDelXP64
+RegisterOCXs=MSIE4RegisterOCX
+AddReg=AddReg.IEMain, AddReg.IEOther, AddReg.InetSettings, AddReg.Misc, AddReg.International.Vista, AddReg.Vista
+DelReg=Remove.Reg,!MUICache.DelReg
+BackupReg=UserRegBackup
+PreRollBack=UserDataUninstall.NT
+RunPostSetupCommands=SetReg:1
+NoBackupPlatform="NT5.1"
+
+[DefaultInstall.W2k3]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+ProfileItems=BrowserDelXP,BrowserDelXP64
+RegisterOCXs=MSIE4RegisterOCX
+AddReg=AddReg.IEMain, AddReg.IEOther, AddReg.InetSettings, AddReg.Misc, AddReg.International.W2K3, AddReg.XPandW2K3, AddReg.W2K3
+DelReg=Remove.Reg,!MUICache.DelReg, DelReg.XPandW2K3
+BackupReg=UserRegBackup
+PreRollBack=UserDataUninstall.NT
+RunPostSetupCommands=SetReg:1
+NoBackupPlatform="NT5.1"
+
+[SoundInstall.NT]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+AddReg=AddReg.Sounds
+NoBackupPlatform="NT5.1"
+
+[AddReg.XPandW2K3]
+HKCU,"Software\Microsoft\Internet Explorer\InternetRegistry",,%REG_KEYONLY%,
+HKCU,"Software\Microsoft\Internet Explorer\LowRegistry",,%REG_KEYONLY%,
+HKCU,"Software\Microsoft\Internet Explorer\SearchUrl",,%REG_KEYONLY%,
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","PrivDiscUiShown",%REG_DWORD_CLOBBER%,01,00,00,00
+HKCU,"Software\Microsoft\Internet Explorer\Main","UseClearType",2,"yes"
+HKCU,"software\Microsoft\Windows\Shell","BagMRU Size",%REG_DWORD_CLOBBER%,5000
+HKCU,"Software\Microsoft\Windows\ShellNoRoam","BagMRU Size",%REG_DWORD_CLOBBER%,5000
+
+[AddReg.W2K3]
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains\msn.com\runonce","http",0x10003,0x2 
+
+[AddReg.Vista]
+HKCU,"Software\Microsoft\Internet Explorer\Main","UseClearType",2,"no"
+
+
+[DelReg.XPandW2K3]
+HKCU,"Software\Microsoft\Internet Explorer\Main","RunOnceHasShown"
+HKCU,"Software\Microsoft\Internet Explorer\Main","RunOnceLastShown"
+HKCU,"Software\Microsoft\Internet Explorer\Main","RunOnceComplete"
+
+[AddReg.Sounds]
+; Sound Events for Browser
+HKCU,"AppEvents\Schemes\Apps\Explorer\ActivatingDocument",,,
+HKCU,"AppEvents\EventLabels\ActivatingDocument",,,"%SND_NAVIGATEEND%"
+HKCU,"AppEvents\EventLabels\ActivatingDocument","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10321"
+HKCU,"AppEvents\Schemes\Apps\Explorer\MoveMenuItem",,,
+HKCU,"AppEvents\EventLabels\MoveMenuItem",,,"%SND_MOVEMENUITEM%"
+HKCU,"AppEvents\EventLabels\MoveMenuItem","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10322"
+
+; Navigate sound
+HKCU,"AppEvents\EventLabels\Navigating",,,"%SND_NAVIGATESTART%"
+HKCU,"AppEvents\EventLabels\Navigating","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10320"
+HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_NAVIGATESTART%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_NAVIGATESTART%.wav"
+
+; Blocked pop-up sound
+HKCU,"AppEvents\EventLabels\BlockedPopup",,,"%SND_BLOCKEDPOPUP%"
+HKCU,"AppEvents\EventLabels\BlockedPopup","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10325"
+HKCU,"AppEvents\Schemes\Apps\Explorer\BlockedPopup",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\BlockedPopup\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_BLOCKEDPOPUP%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\BlockedPopup\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_BLOCKEDPOPUP%.wav"
+
+; Information bar sound
+HKCU,"AppEvents\EventLabels\SecurityBand",,,"%SND_SECBAND%"
+HKCU,"AppEvents\EventLabels\SecurityBand","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10326"
+HKCU,"AppEvents\Schemes\Apps\Explorer\SecurityBand",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\SecurityBand\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_INFOBAND%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\SecurityBand\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_INFOBAND%.wav"
+
+
+; Sound Events for Comctl32
+HKCU,"AppEvents\Schemes\Apps\.Default\CCSelect",,,
+HKCU,"AppEvents\Schemes\Apps\.Default\ShowBand",,,
+HKCU,"AppEvents\EventLabels\CCSelect",,,"%SND_SELECT%"
+HKCU,"AppEvents\EventLabels\CCSelect","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10323"
+HKCU,"AppEvents\EventLabels\ShowBand",,,"%SND_SHOWBAND%"
+HKCU,"AppEvents\EventLabels\ShowBand","DispFileName",%REG_EXSZ_CLOBBER%,"@ieframe.dll,-10324"
+
+; Sounds for Feed Discovery
+HKCU,"AppEvents\EventLabels\FeedDiscovered",,,"%SND_FEEDDISC%"
+HKCU,"AppEvents\EventLabels\FeedDiscovered","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-17315"
+HKCU,"AppEvents\Schemes\Apps\Explorer\FeedDiscovered",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\FeedDiscovered\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_FEEDDISC%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\FeedDiscovered\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_FEEDDISC%.wav"
+
+; Sounds for Search Discovery
+HKCU,"AppEvents\EventLabels\SearchProviderDiscovered",,,"%SND_SEARCHDISC%"
+HKCU,"AppEvents\EventLabels\SearchProviderDiscovered","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-12513"
+HKCU,"AppEvents\Schemes\Apps\Explorer\SearchProviderDiscovered",,,
+
+[MSIE4RegisterOCX]
+%11%\wininet.dll,NI,HKCU
+%11%\urlmon.dll,NI,HKCU
+%11%\inetcpl.cpl,NI,HKCUSoft.NoClobber
+%11%\browseui.dll,NI,U
+%11%\webcheck.dll,NI,U
+
+;******************************************
+; IE Hardening setup, called by iodver.cpp
+;******************************************
+[IEHardenAdmin]
+AddReg=IEHarden.Reg
+RegisterOCXs=IEHardenRegisterDll
+
+[IEHardenUser]
+AddReg=IEHarden.Reg
+RegisterOCXs=IEHardenRegisterDll
+
+[IESoftenAdmin]
+DelReg=IEHarden.Reg
+RegisterOCXs=IESoftenRegisterDll
+
+[IESoftenUser]
+DelReg=IEHarden.Reg
+RegisterOCXs=IESoftenRegisterDll
+
+[IEHarden.Reg]
+HKCU,"%PATH_ZONEMAP%","IEHarden",0x10001,0x1
+
+[IEHardenMachine]
+RegisterOCXs=IEHardenMachineRegisterDll
+
+[IESoftenMachine]
+RegisterOCXs=IESoftenMachineRegisterDll
+
+[IEHardenRegisterDll]
+; First register with default settings, then harden/soften as needed
+%11%\urlmon.dll,NI,HKCU
+
+%11%\urlmon.dll,NI,HKCUHard
+%11%\inetcpl.cpl,NI,HKCUHard
+%11%\wininet.dll,NI,HKCUHard
+
+[IESoftenRegisterDll]
+; First register with default settings, then harden/soften as needed
+%11%\urlmon.dll,NI,HKCU
+
+%11%\urlmon.dll,NI,HKCUSoft
+%11%\inetcpl.cpl,NI,HKCUSoft
+%11%\wininet.dll,NI,HKCUSoft
+
+[IEHardenMachineRegisterDll]
+%11%\urlmon.dll,NI,HKLMHard
+%11%\inetcpl.cpl,NI,HKLMHard
+
+[IESoftenMachineRegisterDll]
+%11%\urlmon.dll,NI,HKLMSoft
+%11%\inetcpl.cpl,NI,HKLMSoft
+
+[UserDataUninstall.Win]
+RequiredEngine=Setupapi
+RunPostSetupCommands = Post.mshtml:1
+DelReg=International.cleanup
+
+[UserDataUninstall.NT]
+RunPostSetupCommands = Post.mshtml:1
+DelReg=International.cleanup
+
+[BackupCryptoKeys.Win]
+RequiredEngine=Setupapi
+ComponentName="IE UserData"
+ComponentVersion=6.0
+BackupReg = CryptoKeys
+
+[BackupCryptoKeys.NT]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+BackupReg = CryptoKeys
+NoBackupPlatform="NT5.1"
+
+[DelCryptoKeys]
+DelReg = CryptoKeys
+
+[UserRegBackup]
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","AllowCookies"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","BrandBitmap"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","SmBrandBitmap"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","BackBitmap"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","BitmapMode"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","UseTheme"
+
+[CryptoKeys]
+HKCU,"Software\Microsoft\Cryptography\UserKeys"
+HKCU,"Software\Microsoft\SystemCertificates"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing"
+HKCU,"Software\Policies\Microsoft\SystemCertificates"
+
+[BrowserDelXP]
+Name            =%SHORTCUT_IEXPLORE%,0x00000003
+
+[BrowserDelXP64]
+Name            =%SHORTCUT_IEXPLORE_32%,0x00000003
+
+[SetReg]
+rundll32 advpack.dll,LaunchINFSectionEx %11%\ieuinit.inf,Install,,36
+
+[Post.mshtml]
+rundll32 advpack.dll,LaunchINFSectionEx %11%\ieuinit.inf,Install,,260
+
+[AddReg.IEMain]
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Anchor Underline",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Cache_Update_Frequency",2,"Once_Per_Session"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Display Inline Images",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Do404Search",3,1,0,0,0                  ;this should be a dword value
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Local Page",,"%11%\blank.htm"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Save_Session_History_On_Exit",,"no"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_FullURL",2,"no"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_StatusBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_ToolBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_URLinStatusBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_URLToolBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Use_DlgBox_Colors",2,"yes"
+HKCU,"Software\Microsoft\Internet Explorer\Main","Search Page",2,"%SEARCH_PAGE_URL%"
+; IE7 MSHTML Default Advanced Settings
+HKCU,"Software\Microsoft\Internet Explorer\Main","XMLHTTP",%REG_DWORD_NOCLOBBER%,0x1
+HKCU,"Software\Microsoft\Internet Explorer\Main","NoUpdateCheck",0x10001,0x1
+
+[AddReg.IEOther]
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Security","Sending_Security",2,"Medium"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Security","Viewing_Security",2,"Low"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Services","",2,""
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Anchor Color Visited",2,"128,0,128"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Anchor Color",2,"0,0,255"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Background Color",2,"192,192,192"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Text Color",2,"0,0,0"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Use Anchor Hover Color",2,"No"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\TypedURLs","url1",2,"%START_PAGE%"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\URLSearchHooks","{CFBFAE00-17A6-11D0-99CB-00C04FD64497}",,""
+; default popup blocker settings
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\New Windows","PopupMgr",%REG_SZ_NOCLOBBER%,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\New Windows","PlaySound",%REG_DWORD_NOCLOBBER%,1
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\New Windows","UseSecBand",%REG_DWORD_NOCLOBBER%,1
+
+[AddReg.InetSettings]
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings", "EmailName",2,"IEUser@"
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","AutoConfigProxy",,"wininet.dll"
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","MimeExclusionListForCache",,"multipart/mixed multipart/x-mixed-replace multipart/x-byteranges "
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","WarnOnPost",3,1,0,0,0
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","UseSchannelDirectly",3,01,00,00,00
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","EnableHttp1_1",%REG_DWORD_NOCLOBBER%,1
+; IE6 30335 - disable scripting in restricted zones
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4","1400",%REG_DWORD_CLOBBER%,0x03
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4","1C00",%REG_DWORD_CLOBBER%,0x00
+; Update wininet backup UserAgent settings on upgrade
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","User Agent",%REG_SZ_CLOBBER%,"Mozilla/4.0 (compatible; MSIE 8.0; Win32)"
+; "Always send URLs as UTF-8" should be initialized
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","UrlEncoding",%REG_DWORD_NOCLOBBER%,0x0
+
+[AddReg.Misc]
+;document window settings
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Document Windows","Maximized",2,"no"
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","height",3,00,00,00,00
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","width",3,00,00,00,80
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","x",3,00,00,00,80
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","y",3,00,00,00,00
+
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\NewShortcutHandlers","{FBF23B40-E3F0-101B-8488-00AA003E56F8}",,""
+
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","SecureProtocols",%REG_DWORD_CLOBBER%,A0,00,00,00
+
+; make sure DragFullWindows is off, use no clobber to keep previous
+HKCU,"Control Panel\Desktop","DragFullWindows",2,"0"
+; write no-clobber blank International key for Wininet
+HKCU,"Software\Microsoft\Internet Explorer\International",,2,""
+
+; Windows SE 144016: Prepopulation of Trusted zones.
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains\microsoft.com\*.update","http",0x10003,0x2
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains\microsoft.com\*.update","https",0x10003,0x2
+
+; Attention: Any change to default fonts, please update <root>\inetcore\manifests\Microsoft-Windows-IE-HTMLRendering.man as well.  
+; Because 1.	Manifest works for Guest on Vista but not on XP. 2. INF works for Guest on XP but not on Vista. 
+;    One option is using INF to install default value to HKLM; write IE code to copy them as needed to HKCU at runtime. 
+;    But the code is messy, let’s go with the INF + manifest option though it's not that beautiful.
+; IE6 17968
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\3","IEPropFontName",%REG_SZ_NOCLOBBER%,"Times New Roman"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\3","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Courier New"
+
+; default fonts for scripts that are missing default
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\9","IEPropFontName",%REG_SZ_NOCLOBBER%,"Simplified Arabic"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\9","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Simplified Arabic Fixed"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\7","IEPropFontName",%REG_SZ_NOCLOBBER%,"Sylfaen"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\7","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Sylfaen"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\11","IEPropFontName",%REG_SZ_NOCLOBBER%,"Vrinda"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\11","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Vrinda"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\28","IEPropFontName",%REG_SZ_NOCLOBBER%,"Euphemia"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\28","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Euphemia"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\29","IEPropFontName",%REG_SZ_NOCLOBBER%,"Plantagenet Cherokee"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\29","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Plantagenet Cherokee"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\26","IEPropFontName",%REG_SZ_NOCLOBBER%,"Simsun"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\26","IEFixedFontName",%REG_SZ_NOCLOBBER%,"NSimsun"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\6

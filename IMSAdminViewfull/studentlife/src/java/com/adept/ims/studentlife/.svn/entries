@@ -1,0 +1,40 @@
+8
+
+dir
+7
+http://10.5.0.109:8080/svn/ims/authorization/src/java/com/adept/ims/authorization
+http://10.5.0.109:8080/svn/ims
+
+
+
+2009-01-30T12:53:39.635922Z
+7
+shreelakshmi
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d3e00631-2a5b-43d7-bbc0-ad976deee6e4
+
+service
+dir
+
+database
+dir
+
+validator
+dir
+
+web
+dir
+

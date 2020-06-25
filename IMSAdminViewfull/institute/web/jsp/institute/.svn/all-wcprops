@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute
+END
+updateTrust.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/updateTrust.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/header.jsp
+END
+addTrust.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/addTrust.jsp
+END
+welcome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/welcome.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/footer.jsp
+END
+deleteConfirmTrust.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/deleteConfirmTrust.jsp
+END
+findTrust.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/findTrust.jsp
+END
+showTrust.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/showTrust.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ims/!svn/ver/1/institute/web/WEB-INF/jsp/institute/init.jsp
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/configuration
+END
+GroupService.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/configuration/GroupService.hbm.xml
+END
+Service.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/configuration/Service.hbm.xml
+END
+Role.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/configuration/Role.hbm.xml
+END
+RoleService.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/configuration/RoleService.hbm.xml
+END
+GroupMaster.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/configuration/GroupMaster.hbm.xml
+END
+PersonRole.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/configuration/PersonRole.hbm.xml
+END

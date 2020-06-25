@@ -1,0 +1,41 @@
+<%@ include file="/WEB-INF/jsp/institute/header.jsp" %>
+
+<h2 align="center"><fmt:message key="trust.trust-management"/></h2>
+<br/>
+
+<body>
+    <script type="text/javascript">
+        function cancel(){
+            document.forms[0].addMode.value="cancel";
+        }
+    </script>
+    <h2><fmt:message key="trust.new-trust"/></h2>
+
+    <form:form modelAttribute="trust">
+        <input type="hidden" name="addMode" value="add"/>
+        <table>
+            <tr>
+                <th>
+                    <fmt:message key="trust.trust-name"/> <form:errors path="trustName" cssClass="errors"/>
+                    <br/>
+                    <form:input path="trustName" size="30" maxlength="80"/>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <fmt:message key="common.address"/> <form:errors path="address" cssClass="errors"/>
+                    <br/>
+                    <form:input path="address" size="30" maxlength="80"/>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="<fmt:message key="common.add"/>"/>
+                    <input type="submit" onclick="cancel()" value="<fmt:message key="common.cancel"/>"/>
+                </td>
+            </tr>
+        </table>
+    </form:form>
+</body>
+
+<%@ include file="/WEB-INF/jsp/institute/footer.jsp" %>

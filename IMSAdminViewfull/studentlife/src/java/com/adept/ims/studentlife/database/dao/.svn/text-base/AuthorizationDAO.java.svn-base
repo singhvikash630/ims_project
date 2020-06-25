@@ -1,0 +1,6 @@
+package com.adept.ims.authorization.database.dao;
+
+import com.adept.ims.database.dao.CommonDAO;
+
+public interface AuthorizationDAO  extends CommonDAO {
+}

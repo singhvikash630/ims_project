@@ -1,0 +1,34 @@
+
+
+<%-- 
+    Document   : deleteConfirmPersonRole
+    Created on : Jan 28, 2009, 3:02:26 AM
+    Author     : Vikas
+--%>
+
+<%@ include file="/WEB-INF/jsp/authorization/header.jsp" %>
+
+<h2 align="center"><fmt:message key="personrole.personrole-management"/></h2>
+<br/>
+
+<h2><fmt:message key="personrole.delete-personrole-confirmation"/></h2>
+  <table>
+    <tr>
+      <th>
+          <fmt:message key="personrole.personrole-with-id-x-got-deleted-successfully">
+              <fmt:param value="${personId}"/>
+          </fmt:message>
+        </th>
+    </tr>
+  </table>
+
+<table>
+    <tr>
+        <td>
+            <br>
+            <a href="<c:url value="/authorization/findPersonRole.do"/>"><fmt:message key="personrole.go-to-personrole-management"/></a>
+        </td>
+    </tr>
+</table>
+
+<%@ include file="/WEB-INF/jsp/common/footer.jsp" %>

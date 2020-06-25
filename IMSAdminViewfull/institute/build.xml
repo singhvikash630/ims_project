@@ -1,0 +1,7 @@
+<project name="ims-institute-module" default="all" basedir=".">
+
+   <property name="module.name" value="institute"/>
+
+   <import file="${basedir}/../build-common.xml"/>
+
+</project>

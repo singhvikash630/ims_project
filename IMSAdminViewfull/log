@@ -1,0 +1,312 @@
+Buildfile: build.xml
+
+create-dir:
+
+build-modules:
+
+compile:
+
+build-web:
+
+build-module:
+
+compile:
+
+build-web:
+
+build-module:
+
+compile:
+
+build-web:
+
+build-module:
+
+compile:
+
+build-web:
+
+build-module:
+
+compile:
+
+build-web:
+
+build-module:
+
+compile:
+    [javac] Compiling 32 source files to D:\adept\ims\ims\student\build\classes
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:5: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: package com.adept.ims.student.database.pojo
+    [javac] import com.adept.ims.student.database.pojo.Alumni;
+    [javac]                                            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:10: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.database.dao.AlumniDAO
+    [javac]     public Alumni get(long alumniId);
+    [javac]            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:12: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.database.dao.AlumniDAO
+    [javac]     public List<Alumni> getById(long id);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:14: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.database.dao.AlumniDAO
+    [javac]     public void save(Alumni Alumni);
+    [javac]                      ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:16: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.database.dao.AlumniDAO
+    [javac]     public void update(Alumni Alumni);
+    [javac]                        ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:20: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.database.dao.AlumniDAO
+    [javac]     public List<Alumni> getAll();
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:22: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.database.dao.AlumniDAO
+    [javac]     public List<Alumni> getByFilter(String filter, String value);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\AlumniDAO.java:24: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.database.dao.AlumniDAO
+    [javac]     public List<Alumni> getByOperator(String operator, Map<String, String> queryMap);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:9: package com.adept.ims.hostel.database.pojo does not exist
+    [javac] import com.adept.ims.hostel.database.pojo.Hostel;
+    [javac]                                           ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:11: package com.adept.ims.library.database.pojo does not exist
+    [javac] import com.adept.ims.library.database.pojo.Library;
+    [javac]                                            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:29: cannot find symbol
+    [javac] symbol  : class Library
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac] 	private Library library;
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:31: cannot find symbol
+    [javac] symbol  : class Hostel
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac] 	private Hostel hostel;
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:43: cannot find symbol
+    [javac] symbol  : class Library
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac]                         Parent parent,Institute institute,Person person,Library library,
+    [javac]                                                                         ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:44: cannot find symbol
+    [javac] symbol  : class Hostel
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac]                         CourseMaster courseMaster,Hostel hostel) {
+    [javac]                                                   ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:122: cannot find symbol
+    [javac] symbol  : class Library
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac] 	public Library getLibrary() {
+    [javac]                ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:126: cannot find symbol
+    [javac] symbol  : class Library
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac] 	public void setLibrary(Library library) {
+    [javac]                                ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:138: cannot find symbol
+    [javac] symbol  : class Hostel
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac] 	public Hostel getHostel() {
+    [javac]                ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\pojo\Student.java:142: cannot find symbol
+    [javac] symbol  : class Hostel
+    [javac] location: class com.adept.ims.student.database.pojo.Student
+    [javac] 	public void setHostel(Hostel hostel) {
+    [javac]                               ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:9: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: package com.adept.ims.student.database.pojo
+    [javac] import com.adept.ims.student.database.pojo.Alumni;
+    [javac]                                            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:24: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public Alumni get(long alumniId) {
+    [javac]            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:28: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public List<Alumni> getAll() {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:33: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public void save(Alumni Alumni) {
+    [javac]                      ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:37: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public void update(Alumni Alumni) {
+    [javac]                        ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:41: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public List<Alumni> getByFilter(String filter, String value) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:45: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public List<Alumni> getById(long id) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:49: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public List<Alumni> getByOperator(String operator, Map<String, String> queryMap) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:53: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     private List<Alumni> getByFilter(String string, long id) {
+    [javac]                  ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:57: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]     public List<Alumni> getById(String id) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:5: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: package com.adept.ims.student.database.pojo
+    [javac] import com.adept.ims.student.database.pojo.Alumni;
+    [javac]                                            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:8: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public List<Alumni> getAll();
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:9: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public Alumni get(long alumniId);
+    [javac]            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:11: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public List<Alumni> getById(String basicSearchValue);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:12: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public Alumni save(Alumni Alumni);
+    [javac]                         ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:12: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public Alumni save(Alumni Alumni);
+    [javac]            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:13: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public void update(Alumni Alumni);
+    [javac]                        ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:15: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public List<Alumni> getById(long id);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:16: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public List<Alumni> getByFilter(String filter,String value);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:17: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public List<Alumni> getByOperator(Alumni Alumni, String operator);
+    [javac]                                        ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\AlumniService.java:17: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: interface com.adept.ims.student.service.AlumniService
+    [javac]     public List<Alumni> getByOperator(Alumni Alumni, String operator);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:8: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: package com.adept.ims.student.database.pojo
+    [javac] import com.adept.ims.student.database.pojo.Alumni;
+    [javac]                                            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:22: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public List<Alumni> getAll() {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:26: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public Alumni get(long alumniId) {
+    [javac]            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:36: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public Alumni save(Alumni Alumni) {
+    [javac]                         ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:36: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public Alumni save(Alumni Alumni) {
+    [javac]            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:48: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public List<Alumni> getById(long id) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:52: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public void update(Alumni Alumni) {
+    [javac]                        ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:56: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public List<Alumni> getByFilter(String filter, String value) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:60: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public List<Alumni> getByOperator(Alumni Alumni, String operator) {
+    [javac]                                        ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:60: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public List<Alumni> getByOperator(Alumni Alumni, String operator) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:75: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]     public List<Alumni> getById(String basicSearchValue) {
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\validator\AlumniValidator.java:3: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: package com.adept.ims.student.database.pojo
+    [javac] import com.adept.ims.student.database.pojo.Alumni;
+    [javac]                                            ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\validator\AlumniValidator.java:14: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.validator.AlumniValidator
+    [javac]     public void validate(Alumni Alumni, Errors errors) {
+    [javac]                          ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:20: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]         className = Alumni.class.getName();
+    [javac]                     ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\database\dao\impl\AlumniDAOImpl.java:25: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.database.dao.impl.AlumniDAOImpl
+    [javac]         return (Alumni) super.get(alumniId);
+    [javac]                 ^
+    [javac] D:\adept\ims\ims\student\src\java\com\adept\ims\student\service\impl\AlumniServiceImpl.java:27: cannot find symbol
+    [javac] symbol  : class Alumni
+    [javac] location: class com.adept.ims.student.service.impl.AlumniServiceImpl
+    [javac]         Alumni Alumni = dao.get(alumniId);
+    [javac]         ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 55 errors

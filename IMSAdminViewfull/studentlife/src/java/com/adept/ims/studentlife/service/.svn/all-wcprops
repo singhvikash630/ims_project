@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/service
+END
+GroupsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/service/GroupsService.java
+END
+AuthorizationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/service/AuthorizationService.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/service/RoleService.java
+END
+RolesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/service/RolesService.java
+END
+GroupMasterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/service/GroupMasterService.java
+END
+PersonRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/service/PersonRoleService.java
+END

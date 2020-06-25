@@ -1,0 +1,58 @@
+package com.adept.ims.authorization.web;
+
+import com.adept.ims.authorization.database.pojo.Service;
+import com.adept.ims.authorization.service.AuthorizationService;
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.WebDataBinder;
+
+/**
+ * JavaBean Form controller that is used to search for <code>Trust</code>s by
+ * trust name.
+ *
+ */
+@Controller
+@RequestMapping("/authorization/showService.do")
+public class ShowServiceForm {
+
+	private final AuthorizationService authorizationService;
+
+	@Autowired
+	public ShowServiceForm(AuthorizationService authorizationService) {
+		this.authorizationService = authorizationService;
+	}
+
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields(new String[] {"id"});
+    }
+
+	@RequestMapping(method = RequestMethod.GET)
+	public  String setupForm(Model model) {
+		model.addAttribute("", new Service());
+		return "authorization/viewServices";
+	}
+
+	@RequestMapping(method = RequestMethod.POST)
+	public  String processSubmit(Service service, BindingResult result, Model model) {
+		// find trust by trust name
+		Collection<Service> results = this.authorizationService.getByName(service.getServiceName());
+		if (results.size() < 1) {
+			// no trusts found
+			result.rejectValue("serviceName", "notFound", "not found");
+			return "authorization/viewServices";
+		} else {
+			// trusts found
+			model.addAttribute("selections", results);
+			return "viewServices";
+		}
+	}
+
+}

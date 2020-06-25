@@ -1,0 +1,7 @@
+<project name="ims-authorization-module" default="all" basedir=".">
+
+   <property name="module.name" value="authorization"/>
+
+   <import file="${basedir}/../build-common.xml"/>
+
+</project>

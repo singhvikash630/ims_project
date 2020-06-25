@@ -1,0 +1,26 @@
+<%@ include file="/WEB-INF/jsp/institute/header.jsp" %>
+
+<h2 align="center"><fmt:message key="trust.trust-management"/></h2>
+<br/>
+
+<h2><fmt:message key="trust.delete-trust-confirmation"/></h2>
+  <table>
+    <tr>
+      <th>
+          <fmt:message key="trust.trust-with-id-x-got-deleted-successfully">
+              <fmt:param value="${trustId}"/>
+          </fmt:message>
+        </th>
+    </tr>
+  </table>
+
+<table>
+    <tr>
+        <td>
+            <br>
+            <a href="<c:url value="/institute/findTrust.do"/>"><fmt:message key="trust.go-to-trust-management"/></a>
+        </td>
+    </tr>
+</table>
+
+<%@ include file="/WEB-INF/jsp/common/footer.jsp" %>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/pojo
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/pojo/Service.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/pojo/Role.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/pojo/RoleService.java
+END
+GroupMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupMaster.java
+END
+PersonRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/pojo/PersonRole.java
+END
+GroupService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupService.java
+END

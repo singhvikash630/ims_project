@@ -1,0 +1,7 @@
+<project name="ims-course" default="all" basedir=".">
+
+   <property name="module.name" value="student"/>
+
+   <import file="${basedir}/../build-common.xml"/>
+
+</project>

@@ -1,0 +1,7 @@
+<project name="ims-staff" default="all" basedir=".">
+
+   <property name="module.name" value="staff"/>
+
+   <import file="${basedir}/../build-common.xml"/>
+
+</project>

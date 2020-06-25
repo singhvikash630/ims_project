@@ -1,0 +1,150 @@
+
+<project name="ims" default="all" basedir=".">
+
+    <loadproperties srcfile="${basedir}/build.properties"/>
+
+    <property name="app.name" value="IMS"/>
+  
+    <property name="main.build.dir" value="${basedir}/build"/>
+
+    <property name="common.dir" value="${basedir}/common"/>
+    <property name="common.build.dir" value="${common.dir}/build"/>
+
+    <property name="authorization.dir" value="${basedir}/authorization"/>
+    <property name="authorization.build.dir" value="${authorization.dir}/build"/>
+
+    <property name="institute.dir" value="${basedir}/institute"/>
+    <property name="institute.build.dir" value="${institute.dir}/build"/>
+
+    <property name="course.dir" value="${basedir}/course"/>
+    <property name="course.build.dir" value="${course.dir}/build"/>
+
+    <property name="application.dir" value="${basedir}/application"/>
+    <property name="application.build.dir" value="${application.dir}/build"/>
+
+    <property name="student.dir" value="${basedir}/student"/>
+    <property name="student.build.dir" value="${student.dir}/build"/>
+
+    <property name="staff.dir" value="${basedir}/staff"/>
+    <property name="staff.build.dir" value="${staff.dir}/build"/>
+
+    <property name="curriculum.dir" value="${basedir}/curriculum"/>
+    <property name="curriculum.build.dir" value="${curriculum.dir}/build"/>
+
+    <property name="hostel.dir" value="${basedir}/hostel"/>
+    <property name="hostel.build.dir" value="${hostel.dir}/build"/>
+
+    <property name="library.dir" value="${basedir}/library"/>
+    <property name="library.build.dir" value="${library.dir}/build"/>
+
+
+   <!-- war -->
+    <property name="war.name" value="${app.name}.war"/>
+
+    <target name="build-modules">
+        <ant antfile="${common.dir}/build.xml" dir="${common.dir}" target="build-module"/>
+        <ant antfile="${authorization.dir}/build.xml" dir="${authorization.dir}" target="build-module"/>
+        <ant antfile="${institute.dir}/build.xml" dir="${institute.dir}" target="build-module"/>
+        <ant antfile="${course.dir}/build.xml" dir="${course.dir}" target="build-module"/>
+        <ant antfile="${application.dir}/build.xml" dir="${application.dir}" target="build-module"/>
+        <ant antfile="${hostel.dir}/build.xml" dir="${hostel.dir}" target="build-module"/>
+        <ant antfile="${library.dir}/build.xml" dir="${library.dir}" target="build-module"/>
+        <ant antfile="${student.dir}/build.xml" dir="${student.dir}" target="build-module"/>
+        <ant antfile="${staff.dir}/build.xml" dir="${staff.dir}" target="build-module"/>
+<!--        <ant antfile="${curriculum.dir}/build.xml" dir="${curriculum.dir}" target="build-module"/> -->
+    </target>
+
+    <target name="create-dir">
+        <mkdir dir="${main.build.dir}/${app.name}/WEB-INF"/>
+        <mkdir dir="${main.build.dir}/${app.name}/WEB-INF/lib"/>
+        <mkdir dir="${main.build.dir}/${app.name}/META-INF"/>
+    </target>
+
+    <target name="build-webapp" depends="create-dir,build-modules">
+        <!-- lib creation -->
+        <copy todir="${main.build.dir}/${app.name}/WEB-INF/lib">
+            <fileset dir="${basedir}/lib"/>
+            <fileset dir="${common.build.dir}/lib"/>
+            <fileset dir="${authorization.build.dir}/lib"/>
+            <fileset dir="${institute.build.dir}/lib"/>
+            <fileset dir="${course.build.dir}/lib"/>
+            <fileset dir="${application.build.dir}/lib"/>
+            <fileset dir="${student.build.dir}/lib"/>
+            <fileset dir="${staff.build.dir}/lib"/>
+            <!-- <fileset dir="${curriculum.build.dir}/lib"/> -->
+            <fileset dir="${hostel.build.dir}/lib"/>
+            <fileset dir="${library.build.dir}/lib"/>
+        </copy>
+        <!-- WEB-INF creation -->
+        
+        <copy todir="${main.build.dir}/${app.name}/WEB-INF">
+
+            <fileset dir="${common.build.dir}/web/">
+                <include name="jsp/**"/>
+            </fileset>
+            <fileset dir="${authorization.build.dir}/web"/>
+            <fileset dir="${institute.build.dir}/web"/>
+            <fileset dir="${course.build.dir}/web"/>
+            <fileset dir="${application.build.dir}/web"/>
+            <fileset dir="${student.build.dir}/web"/>
+            <fileset dir="${staff.build.dir}/web"/>
+            <!--fileset dir="${curriculum.build.dir}/web"/-->
+            <fileset dir="${hostel.build.dir}/web"/>
+            <fileset dir="${library.build.dir}/web"/>
+       
+        </copy>
+
+        <!-- META-INF creation -->
+        <copy todir="${main.build.dir}/${app.name}/META-INF">
+            <fileset file="${common.build.dir}/web/context.xml"/>
+        </copy>
+
+        <copy todir="${main.build.dir}/${app.name}">
+            <fileset dir="${common.build.dir}/web">
+                <include name="js/*"/>
+                <include name="styles/*"/>
+                <include name="login/*"/>
+                <include name="index.jsp"/>
+            </fileset>
+        </copy>
+        <copy todir="${main.build.dir}/${app.name}/WEB-INF">
+            <fileset dir="${basedir}/configuration"/>
+        </copy>
+        <copy todir="${main.build.dir}/${app.name}/WEB-INF/classes">
+            <fileset dir="${basedir}/l10n"/>
+        </copy>
+
+    </target>
+
+    <target name="build" depends="build-webapp">
+        <jar basedir="${main.build.dir}/${app.name}" destfile="${main.build.dir}/${app.name}.war"/>
+    </target>
+
+    <target name="clean">
+        <echo message="Deleting ${main.build.dir}..."/>
+        <delete dir="${main.build.dir}"/>
+    </target>
+
+    <target name="clean-all" depends="clean">
+        <echo message="Deleting modules build diretories..."/>
+        <delete dir="${common.build.dir}"/>
+        <delete dir="${authorization.build.dir}"/>
+        <delete dir="${institute.build.dir}"/>
+        <delete dir="${course.build.dir}"/>
+        <delete dir="${application.build.dir}"/>
+        <delete dir="${student.build.dir}"/>
+        <delete dir="${staff.build.dir}"/>
+        <delete dir="${curriculum.build.dir}"/>
+        <delete dir="${hostel.build.dir}"/>
+        <delete dir="${library.build.dir}"/>
+
+    </target>
+    <target name="deploy">
+        <exec executable="${glassfish.home}/bin/asadmin.bat">
+            <arg value="deploydir"/>
+            <arg value="${main.build.dir}/IMS"/>
+        </exec>        
+    </target>
+    <target name="all" depends="build,deploy">
+    </target>
+</project>

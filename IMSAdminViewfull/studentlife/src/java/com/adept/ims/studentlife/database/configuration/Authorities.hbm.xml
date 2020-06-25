@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 10, 2009 8:20:06 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="ims" name="com.adept.ims.authorization.database.pojo.Authorities" table="authorities">
+    <id name="id" type="long">
+      <column name="ID"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="authority" type="string">
+      <column name="authority" not-null="true"/>
+    </property>
+    <many-to-one cascade="all" class="com.adept.ims.authorization.database.pojo.Users" fetch="select" lazy="false" name="audit" unique="true">
+      <column name="USER_NAME"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

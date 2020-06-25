@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/validator
+END
+GroupServiceValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/validator/GroupServiceValidator.java
+END
+ServiceValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/validator/ServiceValidator.java
+END
+RoleValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/validator/RoleValidator.java
+END
+RoleServiceValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/validator/RoleServiceValidator.java
+END
+GroupMasterValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/validator/GroupMasterValidator.java
+END
+PersonRoleValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ims/!svn/ver/7/authorization/src/java/com/adept/ims/authorization/validator/PersonRoleValidator.java
+END

@@ -1,0 +1,65 @@
+package com.adept.ims.authorization.web;
+
+import com.adept.ims.authorization.database.pojo.GroupService;
+import com.adept.ims.authorization.service.GroupsService;
+import com.adept.ims.authorization.validator.GroupServiceValidator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.RequestParam;
+
+/**
+ * JavaBean form controller that is used to add a new <code>Trust</code> to
+ * the system.
+ *
+ */
+@Controller
+@RequestMapping("/authorization/addGroupService.do")
+@SessionAttributes(types = GroupService.class)
+public class AddGroupServiceForm {
+
+    private final GroupsService groupsService;
+
+    @Autowired
+    public AddGroupServiceForm(GroupsService groupsService) {
+        this.groupsService = groupsService;
+    }
+
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields(new String[]{"id"});
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public String setupForm(Model model) {
+        GroupService groupService = new GroupService();
+        model.addAttribute(groupService);
+        return "authorization/addGroupService";
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public String processSubmit(@RequestParam("addMode") String addMode,
+            @ModelAttribute GroupService groupService, BindingResult result, Model model, SessionStatus status) {
+        if (addMode.trim().equals("cancel")) {
+            return "redirect:findGroupService.do";
+        }
+        new GroupServiceValidator().validate(groupService, result);
+        if (result.hasErrors()) {
+            return "authorization/addGroupService";
+        } else {
+            this.groupsService.save(groupService);
+            groupService.setNew(true);
+            model.addAttribute("groupService", groupService);
+            return "authorization/showGroupService";
+        }
+    }
+}

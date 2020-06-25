@@ -1,0 +1,7 @@
+<project name="ims-curriculum-module" default="all" basedir=".">
+
+   <property name="module.name" value="curriculum"/>
+
+   <import file="${basedir}/../build-common.xml"/>
+
+</project>

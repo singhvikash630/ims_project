@@ -1,0 +1,12 @@
+<%@ include file="/WEB-INF/jsp/common/init.jsp" %>
+<%@ include file="/WEB-INF/jsp/common/header.jsp" %>
+
+<h2><fmt:message key="common.welcome"/></h2>
+
+<ul>
+  <li><a href="<c:url value="/institute/welcome.do"/>">Institute Module</a></li>
+ </ul>
+
+<p>&nbsp;</p>
+
+<%@ include file="/WEB-INF/jsp/common/footer.jsp" %>

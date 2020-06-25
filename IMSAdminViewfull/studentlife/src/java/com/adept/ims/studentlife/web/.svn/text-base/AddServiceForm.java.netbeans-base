@@ -1,0 +1,65 @@
+package com.adept.ims.authorization.web;
+
+import com.adept.ims.authorization.database.pojo.Service;
+import com.adept.ims.authorization.service.AuthorizationService;
+import com.adept.ims.authorization.validator.ServiceValidator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.RequestParam;
+
+/**
+ * JavaBean form controller that is used to add a new <code>Trust</code> to
+ * the system.
+ *
+ */
+@Controller
+@RequestMapping("/authorization/addService.do")
+@SessionAttributes(types = Service.class)
+public class AddServiceForm {
+
+    private final AuthorizationService authorizationService;
+
+    @Autowired
+    public AddServiceForm(AuthorizationService authorizationService) {
+        this.authorizationService = authorizationService;
+    }
+
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields(new String[]{"id"});
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public String setupForm(Model model) {
+        Service service = new Service();
+        model.addAttribute(service);
+        return "authorization/addService";
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public String processSubmit(@RequestParam("addMode") String addMode,
+            @ModelAttribute Service service, BindingResult result, Model model, SessionStatus status) {
+        if (addMode.trim().equals("cancel")) {
+            return "redirect:findService.do";
+        }
+        new ServiceValidator().validate(service, result);
+        if (result.hasErrors()) {
+            return "authorization/addService";
+        } else {
+            this.authorizationService.save(service);
+            service.setNew(true);
+            model.addAttribute("service", service);
+            return "authorization/showService";
+        }
+    }
+}

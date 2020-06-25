@@ -1,0 +1,551 @@
+Apache Ant version 1.7.0 compiled on February 21 2008
+Buildfile: build.xml
+Detected Java version: 1.6 in: /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0/jre
+Detected OS: Linux
+parsing buildfile /home/Shreelakshmi/adept/src/ims/authorization/build.xml with URI = file:/home/Shreelakshmi/adept/src/ims/authorization/build.xml
+Project base dir set to: /home/Shreelakshmi/adept/src/ims/authorization
+[antlib:org.apache.tools.ant] Could not load definitions from resource org/apache/tools/ant/antlib.xml. It could not be found.
+Importing file /home/Shreelakshmi/adept/src/ims/build-common.xml from /home/Shreelakshmi/adept/src/ims/authorization/build.xml
+parsing buildfile /home/Shreelakshmi/adept/src/ims/build-common.xml with URI = file:/home/Shreelakshmi/adept/src/ims/build-common.xml
+Build sequence for target(s) `all' is [compile, build-web, build-module, all]
+Complete build sequence is [compile, build-web, build-module, all, ims-common.build-module, ims-common.compile, ims-common.build-web, ims-common.all, clean, ims-common.clean, ]
+
+compile:
+Property "build.path" has not been set
+     [echo] ${build.path}
+    [mkdir] Skipping /home/Shreelakshmi/adept/src/ims/authorization/build/classes because it already exists.
+     [copy] No sources found.
+     [copy] No sources found.
+    [javac] com/adept/ims/authorization/database/configuration/GroupMaster.hbm.xml skipped - don't know how to handle it
+    [javac] com/adept/ims/authorization/database/configuration/GroupService.hbm.xml skipped - don't know how to handle it
+    [javac] com/adept/ims/authorization/database/configuration/PersonRole.hbm.xml skipped - don't know how to handle it
+    [javac] com/adept/ims/authorization/database/configuration/Role.hbm.xml skipped - don't know how to handle it
+    [javac] com/adept/ims/authorization/database/configuration/RoleService.hbm.xml skipped - don't know how to handle it
+    [javac] com/adept/ims/authorization/database/configuration/Service.hbm.xml skipped - don't know how to handle it
+    [javac] com/adept/ims/authorization/database/dao/AuthorizationDAO.java added as com/adept/ims/authorization/database/dao/AuthorizationDAO.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/GroupMasterDAO.java added as com/adept/ims/authorization/database/dao/GroupMasterDAO.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/GroupServiceDAO.java added as com/adept/ims/authorization/database/dao/GroupServiceDAO.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/PersonRoleDAO.java added as com/adept/ims/authorization/database/dao/PersonRoleDAO.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/RoleDAO.java added as com/adept/ims/authorization/database/dao/RoleDAO.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/RoleServiceDAO.java added as com/adept/ims/authorization/database/dao/RoleServiceDAO.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/ServiceDAO.java added as com/adept/ims/authorization/database/dao/ServiceDAO.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/impl/AuthorizationDAOImpl.java added as com/adept/ims/authorization/database/dao/impl/AuthorizationDAOImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java added as com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java added as com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/impl/PersonRoleDAOImpl.java added as com/adept/ims/authorization/database/dao/impl/PersonRoleDAOImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/impl/RoleDAOImpl.java added as com/adept/ims/authorization/database/dao/impl/RoleDAOImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/impl/RoleServiceDAOImpl.java added as com/adept/ims/authorization/database/dao/impl/RoleServiceDAOImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/dao/impl/ServiceDAOImpl.java added as com/adept/ims/authorization/database/dao/impl/ServiceDAOImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/pojo/GroupMaster.java added as com/adept/ims/authorization/database/pojo/GroupMaster.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/pojo/GroupService.java added as com/adept/ims/authorization/database/pojo/GroupService.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/pojo/PersonRole.java added as com/adept/ims/authorization/database/pojo/PersonRole.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/pojo/Role.java added as com/adept/ims/authorization/database/pojo/Role.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/pojo/RoleService.java added as com/adept/ims/authorization/database/pojo/RoleService.class doesn't exist.
+    [javac] com/adept/ims/authorization/database/pojo/Service.java added as com/adept/ims/authorization/database/pojo/Service.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/GroupMasterService.java added as com/adept/ims/authorization/service/GroupMasterService.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/GroupsService.java added as com/adept/ims/authorization/service/GroupsService.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/PersonRoleService.java added as com/adept/ims/authorization/service/PersonRoleService.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/RoleService.java added as com/adept/ims/authorization/service/RoleService.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/RolesService.java added as com/adept/ims/authorization/service/RolesService.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/Service.java added as com/adept/ims/authorization/service/Service.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/impl/GroupMasterServiceImpl.java added as com/adept/ims/authorization/service/impl/GroupMasterServiceImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/impl/GroupsServiceImpl.java added as com/adept/ims/authorization/service/impl/GroupsServiceImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/impl/PersonRoleServiceImpl.java added as com/adept/ims/authorization/service/impl/PersonRoleServiceImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/impl/RoleServiceImpl.java added as com/adept/ims/authorization/service/impl/RoleServiceImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/impl/RolesServiceImpl.java added as com/adept/ims/authorization/service/impl/RolesServiceImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/service/impl/ServiceImpl.java added as com/adept/ims/authorization/service/impl/ServiceImpl.class doesn't exist.
+    [javac] com/adept/ims/authorization/validator/GroupMasterValidator.java added as com/adept/ims/authorization/validator/GroupMasterValidator.class doesn't exist.
+    [javac] com/adept/ims/authorization/validator/GroupServiceValidator.java added as com/adept/ims/authorization/validator/GroupServiceValidator.class doesn't exist.
+    [javac] com/adept/ims/authorization/validator/PersonRoleValidator.java added as com/adept/ims/authorization/validator/PersonRoleValidator.class doesn't exist.
+    [javac] com/adept/ims/authorization/validator/RoleServiceValidator.java added as com/adept/ims/authorization/validator/RoleServiceValidator.class doesn't exist.
+    [javac] com/adept/ims/authorization/validator/RoleValidator.java added as com/adept/ims/authorization/validator/RoleValidator.class doesn't exist.
+    [javac] com/adept/ims/authorization/validator/ServiceValidator.java added as com/adept/ims/authorization/validator/ServiceValidator.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/AddGroupMasterForm.java added as com/adept/ims/authorization/web/AddGroupMasterForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/AddGroupServiceForm.java added as com/adept/ims/authorization/web/AddGroupServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/AddPersonRoleForm.java added as com/adept/ims/authorization/web/AddPersonRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/AddRoleForm.java added as com/adept/ims/authorization/web/AddRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/AddRoleServiceForm.java added as com/adept/ims/authorization/web/AddRoleServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/AddServiceForm.java added as com/adept/ims/authorization/web/AddServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/AuthorizationController.java added as com/adept/ims/authorization/web/AuthorizationController.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/DeleteConfirmGroupMasterForm.java added as com/adept/ims/authorization/web/DeleteConfirmGroupMasterForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/DeleteConfirmGroupServiceForm.java added as com/adept/ims/authorization/web/DeleteConfirmGroupServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/DeleteConfirmPersonRoleForm.java added as com/adept/ims/authorization/web/DeleteConfirmPersonRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/DeleteConfirmRoleForm.java added as com/adept/ims/authorization/web/DeleteConfirmRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/DeleteConfirmRoleServiceForm.java added as com/adept/ims/authorization/web/DeleteConfirmRoleServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/DeleteConfirmServiceForm.java added as com/adept/ims/authorization/web/DeleteConfirmServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/FindGroupMasterForm.java added as com/adept/ims/authorization/web/FindGroupMasterForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/FindGroupServiceForm.java added as com/adept/ims/authorization/web/FindGroupServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/FindPersonRoleForm.java added as com/adept/ims/authorization/web/FindPersonRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/FindRoleForm.java added as com/adept/ims/authorization/web/FindRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/FindRoleServiceForm.java added as com/adept/ims/authorization/web/FindRoleServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/FindServiceForm.java added as com/adept/ims/authorization/web/FindServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/ShowGroupMasterForm.java added as com/adept/ims/authorization/web/ShowGroupMasterForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/ShowGroupServiceForm.java added as com/adept/ims/authorization/web/ShowGroupServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/ShowPersonRoleForm.java added as com/adept/ims/authorization/web/ShowPersonRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/ShowRoleForm.java added as com/adept/ims/authorization/web/ShowRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/ShowRoleServiceForm.java added as com/adept/ims/authorization/web/ShowRoleServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/ShowServiceForm.java added as com/adept/ims/authorization/web/ShowServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/UpdateGroupMasterForm.java added as com/adept/ims/authorization/web/UpdateGroupMasterForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/UpdateGroupServiceForm.java added as com/adept/ims/authorization/web/UpdateGroupServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/UpdatePersonRoleForm.java added as com/adept/ims/authorization/web/UpdatePersonRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/UpdateRoleForm.java added as com/adept/ims/authorization/web/UpdateRoleForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/UpdateRoleServiceForm.java added as com/adept/ims/authorization/web/UpdateRoleServiceForm.class doesn't exist.
+    [javac] com/adept/ims/authorization/web/UpdateServiceForm.java added as com/adept/ims/authorization/web/UpdateServiceForm.class doesn't exist.
+    [javac] Compiling 69 source files to /home/Shreelakshmi/adept/src/ims/authorization/build/classes
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+    [javac] '-deprecation'
+    [javac] '-d'
+    [javac] '/home/Shreelakshmi/adept/src/ims/authorization/build/classes'
+    [javac] '-classpath'
+    [javac] '/home/Shreelakshmi/adept/src/ims/authorization/build/classes:/home/Shreelakshmi/adept/src/ims/common/build/lib/common.jar:/home/Shreelakshmi/adept/src/ims/lib/antlr-2.7.6.jar:/home/Shreelakshmi/adept/src/ims/lib/cglib-nodep-2.1_3.jar:/home/Shreelakshmi/adept/src/ims/lib/commons-collections.jar:/home/Shreelakshmi/adept/src/ims/lib/commons-dbcp.jar:/home/Shreelakshmi/adept/src/ims/lib/commons-lang.jar:/home/Shreelakshmi/adept/src/ims/lib/commons-logging.jar:/home/Shreelakshmi/adept/src/ims/lib/commons-pool.jar:/home/Shreelakshmi/adept/src/ims/lib/connector.jar:/home/Shreelakshmi/adept/src/ims/lib/dom4j-1.6.1.jar:/home/Shreelakshmi/adept/src/ims/lib/ehcache-1.5.0.jar:/home/Shreelakshmi/adept/src/ims/lib/hibernate-annotations.jar:/home/Shreelakshmi/adept/src/ims/lib/hibernate-commons-annotations.jar:/home/Shreelakshmi/adept/src/ims/lib/hibernate-entitymanager.jar:/home/Shreelakshmi/adept/src/ims/lib/hibernate3.jar:/home/Shreelakshmi/adept/src/ims/lib/javassist-3.4.GA.jar:/home/Shreelakshmi/adept/src/ims/lib/jstl.jar:/home/Shreelakshmi/adept/src/ims/lib/log4j-1.2.15.jar:/home/Shreelakshmi/adept/src/ims/lib/mysql-connector-java-5.1.6-bin.jar:/home/Shreelakshmi/adept/src/ims/lib/persistence.jar:/home/Shreelakshmi/adept/src/ims/lib/serp-1.13.1.jar:/home/Shreelakshmi/adept/src/ims/lib/sitemesh-2.1.jar:/home/Shreelakshmi/adept/src/ims/lib/slf4j-api-1.5.0.jar:/home/Shreelakshmi/adept/src/ims/lib/slf4j-log4j12-1.5.0.jar:/home/Shreelakshmi/adept/src/ims/lib/spring-aspects.jar:/home/Shreelakshmi/adept/src/ims/lib/spring-webmvc.jar:/home/Shreelakshmi/adept/src/ims/lib/spring.jar:/home/Shreelakshmi/adept/src/ims/lib/springmodules-validator-0.1.jar:/home/Shreelakshmi/adept/src/ims/lib/standard.jar:/home/Shreelakshmi/adept/src/ims/lib/toplink-essentials.jar:/usr/share/java/ant.jar:/usr/share/java/ant-launcher.jar:/usr/share/java/jaxp_parser_impl.jar:/usr/share/java/xml-commons-apis.jar:/usr/share/java/antlr.jar:/usr/share/java/ant/ant-antlr.jar:/usr/share/java/bcel.jar:/usr/share/java/ant/ant-apache-bcel.jar:/usr/share/java/log4j.jar:/usr/share/java/ant/ant-apache-log4j.jar:/usr/share/java/oro.jar:/usr/share/java/ant/ant-apache-oro.jar:/usr/share/java/regexp.jar:/usr/share/java/ant/ant-apache-regexp.jar:/usr/share/java/xml-commons-resolver.jar:/usr/share/java/ant/ant-apache-resolver.jar:/usr/share/java/checkstyle.jar:/usr/share/java/jakarta-commons-beanutils.jar:/usr/share/java/jakarta-commons-cli.jar:/usr/share/java/jakarta-commons-logging.jar:/usr/share/java/jakarta-commons-collections.jar:/usr/share/java/ant/ant-commons-logging.jar:/usr/share/java/javamail.jar:/usr/share/java/jaf.jar:/usr/share/java/ant/ant-javamail.jar:/usr/share/java/jdepend.jar:/usr/share/java/ant/ant-jdepend.jar:/usr/share/java/jsch.jar:/usr/share/java/ant/ant-jsch.jar:/usr/share/java/jtidy.jar:/usr/share/java/junit.jar:/usr/share/java/ant/ant-junit.jar:/usr/share/java/ant/ant-nodeps.jar:/usr/share/java/ant/ant-swing.jar:/usr/share/java/jaxp_transform_impl.jar:/usr/share/java/ant/ant-trax.jar:/usr/lib/jvm/java/lib/tools.jar'
+    [javac] '-sourcepath'
+    [javac] '/home/Shreelakshmi/adept/src/ims/authorization/src/java'
+    [javac] '-g'
+    [javac] 
+    [javac] The ' characters around the executable and arguments are
+    [javac] not part of the command.
+    [javac] Files to be compiled:
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/AuthorizationDAO.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupMasterDAO.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupServiceDAO.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/PersonRoleDAO.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleDAO.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleServiceDAO.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/ServiceDAO.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/AuthorizationDAOImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/PersonRoleDAOImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/RoleDAOImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/RoleServiceDAOImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/ServiceDAOImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupMaster.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupService.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/PersonRole.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Role.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/RoleService.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Service.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/GroupMasterService.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/GroupsService.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/PersonRoleService.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/RoleService.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/RolesService.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/Service.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/GroupMasterServiceImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/GroupsServiceImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/PersonRoleServiceImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/RoleServiceImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/RolesServiceImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/ServiceImpl.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/validator/GroupMasterValidator.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/validator/GroupServiceValidator.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/validator/PersonRoleValidator.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/validator/RoleServiceValidator.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/validator/RoleValidator.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/validator/ServiceValidator.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddGroupMasterForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddGroupServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddPersonRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddRoleServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AuthorizationController.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmGroupMasterForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmGroupServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmPersonRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmRoleServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindGroupMasterForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindGroupServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindPersonRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindRoleServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowGroupMasterForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowGroupServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowPersonRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowRoleServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateGroupMasterForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateGroupServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdatePersonRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateRoleForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateRoleServiceForm.java
+    [javac]     /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateServiceForm.java
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/AuthorizationDAO.java:3: package com.adept.ims.common.database.dao does not exist
+    [javac] import com.adept.ims.common.database.dao.CommonDAO;
+    [javac]                                  ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/AuthorizationDAO.java:5: cannot find symbol
+    [javac] symbol: class CommonDAO
+    [javac] public interface AuthorizationDAO  extends CommonDAO {
+    [javac]                                            ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupMaster.java:3: package com.adept.ims.common.database.pojo does not exist
+    [javac] import com.adept.ims.common.database.pojo.BasePojo;
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupMaster.java:6: cannot find symbol
+    [javac] symbol: class BasePojo
+    [javac] public class GroupMaster extends BasePojo {
+    [javac]                                  ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupService.java:3: package com.adept.ims.common.database.pojo does not exist
+    [javac] import com.adept.ims.common.database.pojo.BasePojo;
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupService.java:6: cannot find symbol
+    [javac] symbol: class BasePojo
+    [javac] public class GroupService extends BasePojo {
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/PersonRole.java:3: package com.adept.ims.common.database.pojo does not exist
+    [javac] import com.adept.ims.common.database.pojo.BasePojo;
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/PersonRole.java:6: cannot find symbol
+    [javac] symbol: class BasePojo
+    [javac] public class PersonRole extends BasePojo {
+    [javac]                                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Role.java:3: package com.adept.ims.common.database.pojo does not exist
+    [javac] import com.adept.ims.common.database.pojo.BasePojo;
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Role.java:6: cannot find symbol
+    [javac] symbol: class BasePojo
+    [javac] public class Role extends BasePojo {
+    [javac]                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/RoleService.java:3: package com.adept.ims.common.database.pojo does not exist
+    [javac] import com.adept.ims.common.database.pojo.BasePojo;
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/RoleService.java:6: cannot find symbol
+    [javac] symbol: class BasePojo
+    [javac] public class RoleService extends BasePojo {
+    [javac]                                  ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Service.java:3: package com.adept.ims.common.database.pojo does not exist
+    [javac] import com.adept.ims.common.database.pojo.BasePojo;
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Service.java:6: cannot find symbol
+    [javac] symbol: class BasePojo
+    [javac] public class Service extends BasePojo {
+    [javac]                              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/AuthorizationDAOImpl.java:4: package com.adept.ims.common.database.dao.impl does not exist
+    [javac] import com.adept.ims.common.database.dao.impl.CommonDAOImpl;
+    [javac]                                       ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/AuthorizationDAOImpl.java:12: cannot find symbol
+    [javac] symbol: class CommonDAOImpl
+    [javac] public class AuthorizationDAOImpl extends CommonDAOImpl implements AuthorizationDAO {
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/Service.java:6: com.adept.ims.authorization.service.Service is already defined in this compilation unit
+    [javac] import com.adept.ims.authorization.database.pojo.Service;
+    [javac] ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/ServiceImpl.java:9: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: package com.adept.ims.authorization.service
+    [javac] import com.adept.ims.authorization.service.ServiceService;
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/service/impl/ServiceImpl.java:13: cannot find symbol
+    [javac] symbol: class ServiceService
+    [javac] public class ServiceImpl implements ServiceService {
+    [javac]                                     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddServiceForm.java:4: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: package com.adept.ims.authorization.service
+    [javac] import com.adept.ims.authorization.service.ServiceService;
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddServiceForm.java:30: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.AddServiceForm
+    [javac]     private final ServiceService serviceService;
+    [javac]                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AddServiceForm.java:33: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.AddServiceForm
+    [javac]     public AddServiceForm(ServiceService serviceService) {
+    [javac]                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AuthorizationController.java:4: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: package com.adept.ims.authorization.service
+    [javac] import com.adept.ims.authorization.service.ServiceService;
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AuthorizationController.java:23: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.AuthorizationController
+    [javac] 	private final ServiceService serviceService;
+    [javac] 	              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/AuthorizationController.java:34: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.AuthorizationController
+    [javac] 	public AuthorizationController(ServiceService serviceService,RoleService roleService,GroupsService groupsService,GroupMasterService groupMasterService,RolesService rolesService,PersonRoleService personRoleService) {
+    [javac] 	                               ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmServiceForm.java:4: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: package com.adept.ims.authorization.service
+    [javac] import com.adept.ims.authorization.service.ServiceService;
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmServiceForm.java:26: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.DeleteConfirmServiceForm
+    [javac]     private final ServiceService serviceService;
+    [javac]                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/DeleteConfirmServiceForm.java:29: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.DeleteConfirmServiceForm
+    [javac]     public DeleteConfirmServiceForm(ServiceService serviceService) {
+    [javac]                                     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindServiceForm.java:4: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: package com.adept.ims.authorization.service
+    [javac] import com.adept.ims.authorization.service.ServiceService;
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindServiceForm.java:27: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.FindServiceForm
+    [javac] 	private final ServiceService serviceService;
+    [javac] 	              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/FindServiceForm.java:30: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.FindServiceForm
+    [javac] 	public FindServiceForm(ServiceService serviceService) {
+    [javac] 	                       ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowServiceForm.java:4: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: package com.adept.ims.authorization.service
+    [javac] import com.adept.ims.authorization.service.ServiceService;
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowServiceForm.java:25: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.ShowServiceForm
+    [javac] 	private final ServiceService serviceService;
+    [javac] 	              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/ShowServiceForm.java:28: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.ShowServiceForm
+    [javac] 	public ShowServiceForm(ServiceService serviceService) {
+    [javac] 	                       ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateServiceForm.java:4: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: package com.adept.ims.authorization.service
+    [javac] import com.adept.ims.authorization.service.ServiceService;
+    [javac]                                           ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateServiceForm.java:28: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.UpdateServiceForm
+    [javac]     private final ServiceService serviceService;
+    [javac]                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/web/UpdateServiceForm.java:31: cannot find symbol
+    [javac] symbol  : class ServiceService
+    [javac] location: class com.adept.ims.authorization.web.UpdateServiceForm
+    [javac]     public UpdateServiceForm(ServiceService serviceService) {
+    [javac]                              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupMasterDAO.java:17: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getAll();
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupMasterDAO.java:19: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getByName(String name);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupMasterDAO.java:21: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getByFilter(String filter, String value);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupMasterDAO.java:23: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getByOperator(String operator, Map<String, String> queryMap);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupMaster.java:54: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupMaster.java:59: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupMaster.java:71: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupServiceDAO.java:18: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getAll();
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupServiceDAO.java:20: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getByName(String id);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupServiceDAO.java:22: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getByFilter(String filter, String value);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/GroupServiceDAO.java:24: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getByOperator(String operator, Map<String, String> queryMap);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupService.java:45: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupService.java:65: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/GroupService.java:77: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/PersonRoleDAO.java:23: type parameter com.adept.ims.authorization.database.pojo.PersonRole is not within its bound
+    [javac]     public List<PersonRole> getAll();
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/PersonRoleDAO.java:27: type parameter com.adept.ims.authorization.database.pojo.PersonRole is not within its bound
+    [javac]     public List<PersonRole> getByFilter(String filter, String value);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/PersonRoleDAO.java:29: type parameter com.adept.ims.authorization.database.pojo.PersonRole is not within its bound
+    [javac]     public List<PersonRole> getByOperator(String operator, Map<String, String> queryMap);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/PersonRole.java:30: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/PersonRole.java:50: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/PersonRole.java:62: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleDAO.java:23: type parameter com.adept.ims.authorization.database.pojo.Role is not within its bound
+    [javac]     public List<Role> getAll();
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleDAO.java:25: type parameter com.adept.ims.authorization.database.pojo.Role is not within its bound
+    [javac]     public List<Role> getByName(String name);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleDAO.java:27: type parameter com.adept.ims.authorization.database.pojo.Role is not within its bound
+    [javac]     public List<Role> getByFilter(String filter, String value);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleDAO.java:29: type parameter com.adept.ims.authorization.database.pojo.Role is not within its bound
+    [javac]     public List<Role> getByOperator(String operator, Map<String, String> queryMap);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Role.java:55: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Role.java:76: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Role.java:88: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleServiceDAO.java:23: type parameter com.adept.ims.authorization.database.pojo.RoleService is not within its bound
+    [javac]     public List<RoleService> getAll();
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleServiceDAO.java:27: type parameter com.adept.ims.authorization.database.pojo.RoleService is not within its bound
+    [javac]     public List<RoleService> getByFilter(String filter, String value);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/RoleServiceDAO.java:29: type parameter com.adept.ims.authorization.database.pojo.RoleService is not within its bound
+    [javac]     public List<RoleService> getByOperator(String operator, Map<String, String> queryMap);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/RoleService.java:30: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/RoleService.java:50: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/RoleService.java:62: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/ServiceDAO.java:18: type parameter com.adept.ims.authorization.database.pojo.Service is not within its bound
+    [javac]     public List<Service> getAll();
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/ServiceDAO.java:20: type parameter com.adept.ims.authorization.database.pojo.Service is not within its bound
+    [javac]     public List<Service> getByName(String name);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/ServiceDAO.java:22: type parameter com.adept.ims.authorization.database.pojo.Service is not within its bound
+    [javac]     public List<Service> getByFilter(String filter, String value);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/ServiceDAO.java:24: type parameter com.adept.ims.authorization.database.pojo.Service is not within its bound
+    [javac]     public List<Service> getByOperator(String operator, Map<String, String> queryMap);
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Service.java:55: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Service.java:75: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/pojo/Service.java:87: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:15: com.adept.ims.authorization.database.dao.impl.GroupMasterDAOImpl is not abstract and does not override abstract method remove(long) in com.adept.ims.authorization.database.dao.GroupMasterDAO
+    [javac] public class GroupMasterDAOImpl extends AuthorizationDAOImpl implements GroupMasterDAO {
+    [javac]        ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:20: cannot find symbol
+    [javac] symbol  : variable className
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.GroupMasterDAOImpl
+    [javac]         className = GroupMaster.class.getName();
+    [javac]         ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:24: cannot find symbol
+    [javac] symbol  : method get(long)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         return (GroupMaster) super.get(groupId);
+    [javac]                                   ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:27: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getAll() {
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:28: cannot find symbol
+    [javac] symbol  : method getAll()
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         return super.getAll();
+    [javac]                     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:33: cannot find symbol
+    [javac] symbol  : method save(com.adept.ims.authorization.database.pojo.GroupMaster)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         super.save(groupMaster);
+    [javac]              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:37: cannot find symbol
+    [javac] symbol  : method update(com.adept.ims.authorization.database.pojo.GroupMaster)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         super.update(groupMaster);
+    [javac]              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:40: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getByFilter(String filter, String value) {
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:41: cannot find symbol
+    [javac] symbol  : method getByFilter(java.lang.String,java.lang.String)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         return super.getByFilter(filter, value);
+    [javac]                     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:44: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getByName(String name) {
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:48: type parameter com.adept.ims.authorization.database.pojo.GroupMaster is not within its bound
+    [javac]     public List<GroupMaster> getByOperator(String operator, Map<String, String> queryMap) {
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupMasterDAOImpl.java:49: cannot find symbol
+    [javac] symbol  : method getByOperator(java.lang.String,java.util.Map<java.lang.String,java.lang.String>)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         return super.getByOperator(operator, queryMap);
+    [javac]                     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:15: com.adept.ims.authorization.database.dao.impl.GroupServiceDAOImpl is not abstract and does not override abstract method remove(long) in com.adept.ims.authorization.database.dao.GroupServiceDAO
+    [javac] public class GroupServiceDAOImpl extends AuthorizationDAOImpl implements GroupServiceDAO {
+    [javac]        ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:20: cannot find symbol
+    [javac] symbol  : variable className
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.GroupServiceDAOImpl
+    [javac]         className = GroupService.class.getName();
+    [javac]         ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:24: cannot find symbol
+    [javac] symbol  : method get(long)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         return (GroupService) super.get(groupServiceId);
+    [javac]                                    ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:27: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getAll() {
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:28: cannot find symbol
+    [javac] symbol  : method getAll()
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         return super.getAll();
+    [javac]                     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:33: cannot find symbol
+    [javac] symbol  : method save(com.adept.ims.authorization.database.pojo.GroupService)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         super.save(groupService);
+    [javac]              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:37: cannot find symbol
+    [javac] symbol  : method update(com.adept.ims.authorization.database.pojo.GroupService)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         super.update(groupService);
+    [javac]              ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:40: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getByFilter(String filter, String value) {
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:41: cannot find symbol
+    [javac] symbol  : method getByFilter(java.lang.String,java.lang.String)
+    [javac] location: class com.adept.ims.authorization.database.dao.impl.AuthorizationDAOImpl
+    [javac]         return super.getByFilter(filter, value);
+    [javac]                     ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:44: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getByName(String id) {
+    [javac]                 ^
+    [javac] /home/Shreelakshmi/adept/src/ims/authorization/src/java/com/adept/ims/authorization/database/dao/impl/GroupServiceDAOImpl.java:48: type parameter com.adept.ims.authorization.database.pojo.GroupService is not within its bound
+    [javac]     public List<GroupService> getByOperator(String operator, Map<String, String> queryMap) {
+    [javac]                 ^
+    [javac] 100 errors

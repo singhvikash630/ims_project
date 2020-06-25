@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization
+END
+updateRoleService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/updateRoleService.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/header.jsp
+END
+showPersonRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/showPersonRole.jsp
+END
+deleteConfirmPersonRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/deleteConfirmPersonRole.jsp
+END
+addRoleService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/addRoleService.jsp
+END
+showService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/showService.jsp
+END
+deleteConfirmService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/deleteConfirmService.jsp
+END
+findRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/findRole.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/init.jsp
+END
+updateRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/updateRole.jsp
+END
+findGroupMaster.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/findGroupMaster.jsp
+END
+addRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/addRole.jsp
+END
+updateGroupMaster.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/updateGroupMaster.jsp
+END
+findGroupService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/findGroupService.jsp
+END
+updateGroupService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/updateGroupService.jsp
+END
+addGroupMaster.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/addGroupMaster.jsp
+END
+deleteConfirmRoleService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/deleteConfirmRoleService.jsp
+END
+showRoleService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/showRoleService.jsp
+END
+addGroupService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/addGroupService.jsp
+END
+findPersonRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/findPersonRole.jsp
+END
+welcome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/welcome.jsp
+END
+updatePersonRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/updatePersonRole.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/footer.jsp
+END
+addPersonRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/addPersonRole.jsp
+END
+findService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/findService.jsp
+END
+deleteConfirmRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/deleteConfirmRole.jsp
+END
+showRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/showRole.jsp
+END
+updateService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/updateService.jsp
+END
+deleteConfirmGroupMaster.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/deleteConfirmGroupMaster.jsp
+END
+addService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/addService.jsp
+END
+showGroupMaster.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/showGroupMaster.jsp
+END
+showGroupService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/showGroupService.jsp
+END
+deleteConfirmGroupService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/deleteConfirmGroupService.jsp
+END
+findRoleService.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ims/!svn/ver/7/authorization/web/WEB-INF/jsp/authorization/findRoleService.jsp
+END

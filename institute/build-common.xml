@@ -1,0 +1,64 @@
+
+<project name="ims-common" default="all">
+
+    <property name="appname" value="IMS"/>
+  
+    <property name="ims.root" value=".."/>
+    
+    <property name="ims.jar" value="${ims.root}/lib"/>
+
+    <property name="src.dir" value="${basedir}/src/java"/>
+    <property name="web.dir" value="${basedir}/web"/>
+    <property name="build.dir" value="${basedir}/build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+
+   <!-- the build path -->
+    <path id="build.path">
+        <fileset dir="${ims.root}" includes="**/*.jar"/>
+        <pathelement location="${classes.dir}"/>
+    </path>
+
+   <!-- war, jar -->
+    <property name="jar.path" value="${build.dir}/lib/${module.name}.jar"/>
+
+    <target name="build-module" depends="compile,build-web">
+        <mkdir dir="${build.dir}/lib"/>
+        <copy todir="${classes.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*.hbm.xml"/>
+            </fileset>
+        </copy>
+        <jar destfile="${jar.path}">
+            <fileset dir="${classes.dir}"/>
+        </jar>
+    </target>
+
+    <target name="build-web">
+        <mkdir dir="${build.dir}/web"/>
+        <copy todir="${build.dir}/web">
+            <fileset dir="${web.dir}"/>
+        </copy>
+    </target>
+
+   <!-- compilation options -->
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <copy todir="${classes.dir}">
+            <fileset dir="${src.dir}" includes="*.properties"/>
+        </copy>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}"
+         debug="on"
+         deprecation="on"
+         classpathref="build.path"
+	 optimize="off"/>
+    </target>
+
+    <target name="clean" description="clean up" >
+      <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="all" depends="build-module">
+    </target>
+
+</project>
